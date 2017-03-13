@@ -1,0 +1,17 @@
+body, html {
+	background-color: #c0C0C0;
+}
+
+.jumbotron{
+	text-align: center;
+	background: url("../images/light_checkered_tiles.png");
+}
+ .jumbotron h2 {
+	font-family: cursive;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+}
+
+
