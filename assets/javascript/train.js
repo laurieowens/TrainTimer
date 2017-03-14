@@ -41,7 +41,7 @@ $("#submit-data").on("click", function(eventObject) {
 });
 
 //
-
+// append data for html
 dataRef.ref().on("child_added", function(childSnapshot) {
 	console.log(childSnapshot.val().trainName);
 	console.log(childSnapshot.val().trainDest);
