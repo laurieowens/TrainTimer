@@ -19,6 +19,7 @@ var trainName = "";
 var trainDest = "";
 var firstTrainX = "";
 var trainFreq = "";
+$('input.form-control').val("");
 
 //capture button click
 $("#submit-data").on("click", function(eventObject) {
@@ -35,20 +36,20 @@ $("#submit-data").on("click", function(eventObject) {
     	firstTrainX: firstTrainX,
     	trainFreq: trainFreq,
     	dateAdded: firebase.database.ServerValue.TIMESTAMP
+    
+//$('input.className:form-control').val("");
     });
-
-    //return false;
+        $('#myForm').trigger("reset");
+//$('#trainName').empty();
+//console.log('#trainName');
+    return false;
 });
+
 
 //
 // append data for html
 dataRef.ref().on("child_added", function(childSnapshot) {
-	console.log(childSnapshot.val().trainName);
-	console.log(childSnapshot.val().trainDest);
-	console.log(childSnapshot.val().firstTrainX);
-	console.log(childSnapshot.val().trainFreq);
-	console.log(childSnapshot.key);
-
+	
 	var trainName = childSnapshot.val().trainName;
 	var trainDest = childSnapshot.val().trainDest;
 	var firstTrainX = childSnapshot.val().firstTrainX;
@@ -57,6 +58,7 @@ dataRef.ref().on("child_added", function(childSnapshot) {
 	var  trainArr= 0;
 
 	$("#trainInfo").append("<tr><td>" + trainName + "</td><td>" + trainDest+"</td><td>" + trainFreq+"</td><td>" +firstTrainX+  "</td><td>" + minsAway+"</td></tr>");
+$('input.classname:form-control').val("");
 });
 
 
