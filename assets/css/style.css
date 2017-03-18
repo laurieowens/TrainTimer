@@ -1,35 +1,38 @@
-body, html {
-	background-color: #c0C0C0;
+body,
+html {
+    background-color: #c0C0C0;
 }
 
-.jumbotron{
-	text-align: center;
-	background: url("../images/light_checkered_tiles.png");
+.jumbotron {
+    text-align: center;
+    background: url("../images/light_checkered_tiles.png");
 }
-.container div .panel-heading{
-	background: url("../images/light_checkered_tiles.png");
-	font-weight: bold;
+
+.container div .panel-heading {
+    background: url("../images/light_checkered_tiles.png");
+    font-weight: bold;
 }
- .jumbotron h2 {
-	font-family: cursive;
-	font-weight: bold;
-	text-align: center;
-	font-size: 30px;
-	line-height: 50px;
+
+.jumbotron h2 {
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
 }
+
 .container th {
-	font-size: 15px;
-	font-weight: bold;
-
+    font-size: 15px;
+    font-weight: bold;
 }
-.container label{
-	font-size: 15px;
-	font-weight: bold;
 
+.container label {
+    font-size: 15px;
+    font-weight: bold;
 }
+
 .container button {
-	background: url("../images/light_checkered_tiles.png");
-	font-size: 15px;
-	font-weight: bold;
-
+    background: url("../images/light_checkered_tiles.png");
+    font-size: 15px;
+    font-weight: bold;
 }
